@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ali/Desktop/FYP/MLflow/mlops_fyp/src/mlruns/0/4a8c8873a36b4c6c83952cec15fc48dc/artifacts
+end_time: 1678341696231
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4a8c8873a36b4c6c83952cec15fc48dc
+run_name: demo-exp1
+run_uuid: 4a8c8873a36b4c6c83952cec15fc48dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678341696201
+status: 3
+tags: []
+user_id: ali

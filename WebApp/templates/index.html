@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(193, 193, 223);" >
+    
+
+    <head>
+        <title>MLOps</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <center> <h1 style="font-family: sans-serif; color:rgb(68, 63, 63)">Bridging the Gap: MLOPS</h1></center> 
+        
+        
+    </head>
+
+    <body style="background-color: rgb(193, 193, 223);"> 
+        
+  
+        <br>
+         <center>
+          <div>
+            
+           <button  id="signup" style="height: 50px; width:120px" class="btn btn-primary btn-lg" onclick="SignUp() "   type="button"> SignUp </button>
+           
+          </div>
+          <br>
+          <div>
+            
+            <button  id="login" style="height: 50px; width:120px" class="btn btn-primary btn-lg" onclick="Login() "  type="button"> Login </button>
+            
+           </div>
+            
+        </center>
+
+                </body>
+                <script>
+                    function SignUp() {
+                    
+                    $.ajax({
+                    type:'GET',
+                    url:'http://127.0.0.1:5000',
+                    success: function(response){
+                    window.location.href="{{url_for('signup')}}"
+        
+                }
+            })
+                    }
+        
+                    function Login() {
+                    
+                    $.ajax({
+                    type:'GET',
+                    url:'http://127.0.0.1:5000',
+                    success: function(response){
+                    window.location.href="{{url_for('login')}}"
+        
+                }
+            })
+                    }
+        
+                </script>
+    
+</html>
